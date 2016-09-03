@@ -1,2 +1,10 @@
 <h1>Demo#index</h1>
 <p>Hello from Index!</p>
+
+<%-# HTML way -%>
+<a href="/demo/hello"> Hello Page Link 1</a> <br />
+<a href="http://reddit.com/r/hiphopheads"> Freshest Subreddit of All Time Link 1</a> <br />
+
+<%-# prefered Rails way-%>
+<%= link_to('Hello Page Link 2', {:action => 'hello', :page => 5, :id => 20}) %> <br />
+<%= link_to('Freshest Subreddit of All Time Link 2', 'http://reddit.com/r/hiphopheads') %> <br />
