@@ -13,13 +13,14 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password: 'rootpass123'
   host: localhost
+  socket: /tmp/mysql.sock
 
 development:
   <<: *default
-  #database: simple_cms_development
+  database: simple_cms_development
+  username: simple_cms
+  password: 'simplepass123'
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
